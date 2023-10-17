@@ -4,7 +4,7 @@ using PSF.Dominio.Entities;
 
 namespace PSF.WebApp.Controllers
 {
-    public class FuncionarioController : Controller
+    public class AnimalController : Controller
     {
         private Contexto db = new Contexto();
 
@@ -16,7 +16,7 @@ namespace PSF.WebApp.Controllers
                 .Skip(0)
                 .ToList();
 
-            var novoFuncionario = new Animal
+            var novoAnimal = new Animal
             {
                 AniamlID = 2,
                 Raca = "12345678911",
@@ -26,7 +26,7 @@ namespace PSF.WebApp.Controllers
                 
             };
 
-            db.Animal.Add(novoFuncionario);
+            db.Animal.Add(novoAnimal);
 
             return View(resultado);
         }
