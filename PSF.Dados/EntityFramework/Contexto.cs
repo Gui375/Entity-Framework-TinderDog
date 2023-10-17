@@ -22,6 +22,7 @@ namespace PSF.Dados.EntityFramework
                                     Password = 044748");
 
         }
+        AppDomainSetup AppDomainSetup { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
