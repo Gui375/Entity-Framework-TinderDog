@@ -14,15 +14,15 @@ namespace PSF.Dados.EntityFramework
     {
         public DbSet<Animal> Animal { get; set; }
 
-        public Contexto(DbContextOptionsBuilder options) : base(options.Options)
+      
+
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer(@"Data source = 201.62.57.93:1434; 
                                     Database = BD44748; 
                                     User ID = RA044748; 
                                     Password = 044748");
-
         }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new AnimalConfiguration()); 
