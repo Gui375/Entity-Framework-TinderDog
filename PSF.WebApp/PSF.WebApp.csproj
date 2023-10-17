@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PSF.Dados\PSF.Dados.csproj" />
+    <ProjectReference Include="..\PSF.Dominio\PSF.Dominio.csproj" />
+  </ItemGroup>
+
+</Project>
