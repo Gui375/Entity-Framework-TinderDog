@@ -1,0 +1,36 @@
+﻿@using PSF.Dominio.Entities;
+
+@model IEnumerable<Animal>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Raca</th>
+            <th>Nome</th>
+            <th>Data Nascimento</th>
+            <th>Sexo</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        @foreach (var item in Model){
+            <td>
+                ID
+            </td>
+            <td>
+                Raca
+            </td>
+            <td>
+                Nome
+            </td>
+            <td>
+                Data Nascimento
+            </td>
+            <td>
+                Sexo
+            </td>
+        }
+        </tbody>
+
+    </table>

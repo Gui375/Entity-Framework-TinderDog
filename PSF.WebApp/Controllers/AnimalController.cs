@@ -11,8 +11,8 @@ namespace PSF.WebApp.Controllers
         public IActionResult Index()
         {
             var resultado = db.Animal
-                .Where(f => f.Sexo == 'O')
-                .Take(10)
+                .Where(f => f.Sexo == 'F')
+                .Take(5)
                 .Skip(0)
                 .ToList();
 
