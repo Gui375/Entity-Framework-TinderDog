@@ -17,10 +17,6 @@ namespace PSF.WebApp.Controllers
                 .ToList();
 
 
-
-
-
-
             var novoAnimal = new Animal
             {
                 AniamlID = 2,
